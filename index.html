@@ -13,7 +13,8 @@
       color: #333;
       text-align: center;
     }
-header {
+
+    header {
       background: linear-gradient(135deg, #ff2f92 0%, #ff8c1a 100%);
       color: #fff;
       padding: 40px 20px;
@@ -44,7 +45,7 @@ header {
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -55,7 +56,7 @@ header {
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    /* 🔑 SAME SIZE FOR ALL IMAGES */
+    /* Same size for all images */
     .brand-card img {
       width: 120px;
       height: 120px;
@@ -80,17 +81,19 @@ header {
     }
   </style>
 </head>
+
 <body>
 
   <header>Brands We Offer</header>
 
-  <!-- ✅ Paragraph Added -->
   <p class="intro-text">
     We offer a wide range of trusted lighting brands known for quality, durability, and energy efficiency.
     Our portfolio includes industry-leading manufacturers that deliver innovative lighting solutions
     for residential, commercial, and industrial applications.
   </p>
-  
+
+  <div class="brand-container">
+
     <div class="brand-card">
       <img src="bajaj.jpg" alt="Bajaj Logo">
       <a href="https://namethopanenti28-oss.github.io/b/" class="brand-btn">Bajaj</a>
@@ -98,17 +101,19 @@ header {
 
     <div class="brand-card">
       <img src="anchor.jpg" alt="Anchor Panasonic Logo">
-      <a href="https://namethopanenti28-oss.github.io/a/" class="brand-btn">Anchor (by Panasonic)</a>
+      <a href="https://namethopanenti28-oss.github.io/a/" class="brand-btn">
+        Anchor (by Panasonic)
+      </a>
     </div>
 
     <div class="brand-card">
       <img src="luker.jpg" alt="Luker Logo">
-      <a href="https://namethopanenti28-oss.github.io/l/ " class="brand-btn">LUKER</a>
+      <a href="https://namethopanenti28-oss.github.io/l/" class="brand-btn">LUKER</a>
     </div>
 
     <div class="brand-card">
       <img src="wipro.jpg" alt="Wipro Logo">
-      <a href="https://namethopanenti28-oss.github.io/w/ " class="brand-btn">Wipro</a>
+      <a href="https://namethopanenti28-oss.github.io/w/" class="brand-btn">Wipro</a>
     </div>
 
     <div class="brand-card">
@@ -120,4 +125,3 @@ header {
 
 </body>
 </html>
-
